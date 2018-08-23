@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Gráfico de Series de Tiempo con Highcharts</title>
+    <title>Gráficos de Series de Tiempo con Highcharts</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -11,31 +11,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <style>
-#container {
-    height: 70%;
+.chart {
+    height: 50%;
+    width: 100%;
 }
 </style>
 
 <body>
-    <div id="container"></div>
+    <div class="chart" id="container_1"></div>
+    <div class="chart" id="container_2"></div>
     <script>
+    function generate_chart(container_id, api_call, title, subtitle, units) {
 
-    function generate_chart(api_call) {
-
-        Highcharts.chart('container', {
+        Highcharts.chart(container_id, {
             // ver opciones de customización en https://api.highcharts.com/highcharts/
 
             title: {
-                text: 'Tipo de Cambio Real Efectivo Sectorial desde 2014'
+                text: title
             },
 
             subtitle: {
-                text: 'Fuente: Secretaría de Transformación Productiva'
+                text: subtitle
             },
 
             yAxis: {
                 title: {
-                    text: 'Indice - Base Noviembre 2015=100'
+                    text: units
                 }
             },
 
@@ -61,7 +62,21 @@
         })
     }
 
-    generate_chart("https://apis.datos.gob.ar/series/api/series/?ids=tcrse_9kwOUq,tcrse_dw8v9V,tcrse_IBMDNk&format=csv&header=descriptions");
+    generate_chart(
+        "container_1",
+        "https://apis.datos.gob.ar/series/api/series/?ids=tcrse_9kwOUq,tcrse_dw8v9V,tcrse_IBMDNk&format=csv&header=descriptions&limit=1000",
+        "Tipo de Cambio Real Efectivo Sectorial desde 2014",
+        "Fuente: Secretaría de Transformación Productiva",
+        "Indice - Base Noviembre 2015=100"
+    );
+
+    generate_chart(
+        "container_2",
+        "https://apis-stg.datos.gob.ar/series/api/series/?limit=1000&ids=143.3_NO_PR_2004_A_21,143.3_NO_PR_2004_A_28&format=csv&header=descriptions",
+        "Estimador Mensual de Actividad Económica (EMAE)",
+        "Fuente: Subsecretaría de Programación Macroeconómica en base a INDEC",
+        "Indice - Base 2004=100"
+    );
     </script>
 </body>
 
