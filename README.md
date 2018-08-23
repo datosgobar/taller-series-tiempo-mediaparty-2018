@@ -11,32 +11,33 @@ Después clonate el repo e instalá las dependencias:
 
 ```
 git clone https://github.com/datosgobar/taller-series-tiempo-mediaparty-2018.git
+
 pip install -r requirements.txt
 ```
 
 ## Outline
 
-0. Instalación de recursos + introducción (20/30')
+0. [Instalación de recursos + introducción (20/30')](https://docs.google.com/presentation/d/1GD_g9uNMfv2hL4uzFJO5vu2M8kr4nylveokd13cDi5Q/edit?usp=sharing)
 1. [Usar con Google Spreadsheet (30')](1%20-%20Usar%20con%20Google%20Spreadsheet.md)
 2. [Usar con Python (30')](2%20-%20Usar%20con%20Python.ipynb)
 3. [Usar con HTML y JavaScript (30')](3%20-%20Usar%20con%20HTML%20y%20JavaScript.md)
+4. Primicia, feedback, bonus track, invitación a un evento y algunas curiosidades... (20/30')
 
 ## Otros recursos
 
 ### Series de Tiempo
 
-* [API de Series de Tiempo](http://apis.datos.gob.ar/series/). Documentación oficial completa para usar la API.
+* **[API de Series de Tiempo](http://apis.datos.gob.ar/series/). Documentación oficial completa para usar la API.**
 * [Landing de Series de Tiempo](https://github.com/datosgobar/series-tiempo-ar-landing). Proyecto para hacer una landing web de series de tiempo [como esta](https://datosgobar.github.io/series-tiempo-ar-landing/).
 * [Generador de llamadas a la API](https://datosgobar.github.io/series-tiempo-ar-call-generator/). Front sencillo para facilitar la construcción de una llamada a la API de Series de Tiempo.
-* [Explorador de Series de Tiempo](http://datos.gob.ar/series/api). Explorador y visualizador web de series de tiempo en [datos.gob.ar](http://datos.gob.ar/) (Disponible a partir de la semana que viene!).
+* [Explorador de Series de Tiempo](http://datos.gob.ar/series/api). Explorador y visualizador web de series de tiempo en [datos.gob.ar](http://datos.gob.ar/) (**Disponible a partir de la semana que viene!**).
 
 ### Librerías
 
 * [`pandas`](http://pandas.pydata.org/): Estructuras y herramientas para análisis de datos en Python.
-
-### Datos usados en el taller
-
-* 
+* [`arrow`](https://arrow.readthedocs.io): Librería para manejo fácil y potente de fechas en python.
+* [`markdown`](https://python-markdown.github.io/reference/): Convertir markdown en html.
+* [`pdfkit`](https://pypi.org/project/pdfkit/): Hacer PDFs desde python en 2 minutos.
 
 ### Herramientas usadas en el taller
 
@@ -46,4 +47,4 @@ pip install -r requirements.txt
 
 ## Duración recomendada
 
-2 horas y media
+2 horas / 2 horas y media
