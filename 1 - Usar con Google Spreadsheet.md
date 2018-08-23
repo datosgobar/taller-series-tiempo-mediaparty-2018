@@ -8,6 +8,7 @@ Más abajo, tenés los [pasos básicos](#pasos-basicos) necesarios para reproduc
 
 * Abrir [metadatos de las series](https://docs.google.com/spreadsheets/d/1ZAeDoyrW0mcVABjuurkMQaUNcWSiUgrjLK27fyG_uQ8/edit?usp=sharing)
 * Abrir y hacer una copia de los [ejemplos](https://docs.google.com/spreadsheets/d/1DLFMFkintUSEhiAwO_C2yLoJYc5jCMFeUXFquRNRf1g/edit?usp=sharing)
+* Ver [gráfico publicado de ejemplo](https://datosgobar.github.io/taller-series-tiempo-mediaparty-2018/google_spreadsheet.html)
 
 ## Pasos básicos
 
