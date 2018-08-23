@@ -1,0 +1,6 @@
+pandas
+requests
+arrow
+matplotlib
+markdown
+pdfkit
