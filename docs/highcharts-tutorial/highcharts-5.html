@@ -16,9 +16,6 @@
     width: 49%;
     display: inline-block;
 }
-body {
-    text-align: center;
-}
 </style>
 
 <body>
@@ -26,9 +23,7 @@ body {
     <div class="chart" id="container_2"></div>
     <script>
     function generate_chart(container_id, api_call, title, subtitle, units) {
-
         Highcharts.chart(container_id, {
-            // ver opciones de customización en https://api.highcharts.com/highcharts/
 
             title: {
                 text: title
@@ -44,27 +39,12 @@ body {
                 }
             },
 
-            tooltip: {
-                dateTimeLabelFormats: {
-                    day: '%Y-%m-%d',
-                    month: '%Y-%m',
-                    year: '%Y',
-                }
-            },
-
-            xAxis: {
-                dateTimeLabelFormats: {
-                    day: '%Y-%m-%d',
-                    month: '%Y-%m',
-                    year: '%Y',
-                }
-            },
-
             data: {
                 csvURL: api_call
             }
+
         })
-    }
+    };
 
     generate_chart(
         "container_1",
@@ -81,6 +61,7 @@ body {
         "Fuente: Subsecretaría de Programación Macroeconómica en base a INDEC",
         "Indice - Base 2004=100"
     );
+
     </script>
 </body>
 

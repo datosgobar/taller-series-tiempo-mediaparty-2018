@@ -9,26 +9,21 @@
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/data.js"></script>
 </head>
-
 <style>
-.chart {
-    height: 80%;
-    width: 49%;
-    display: inline-block;
-}
-body {
-    text-align: center;
+#container {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto
 }
 </style>
 
 <body>
-    <div class="chart" id="container_1"></div>
-    <div class="chart" id="container_2"></div>
+    <div id="container_1"></div>
+    <div id="container_2"></div>
     <script>
     function generate_chart(container_id, api_call, title, subtitle, units) {
-
         Highcharts.chart(container_id, {
-            // ver opciones de customización en https://api.highcharts.com/highcharts/
 
             title: {
                 text: title
@@ -44,27 +39,12 @@ body {
                 }
             },
 
-            tooltip: {
-                dateTimeLabelFormats: {
-                    day: '%Y-%m-%d',
-                    month: '%Y-%m',
-                    year: '%Y',
-                }
-            },
-
-            xAxis: {
-                dateTimeLabelFormats: {
-                    day: '%Y-%m-%d',
-                    month: '%Y-%m',
-                    year: '%Y',
-                }
-            },
-
             data: {
                 csvURL: api_call
             }
+
         })
-    }
+    };
 
     generate_chart(
         "container_1",
@@ -81,6 +61,7 @@ body {
         "Fuente: Subsecretaría de Programación Macroeconómica en base a INDEC",
         "Indice - Base 2004=100"
     );
+
     </script>
 </body>
 

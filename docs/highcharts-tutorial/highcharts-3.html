@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gráficos de Series de Tiempo con Highcharts</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+</head>
+<style>
+#container {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto
+}
+</style>
+
+<body>
+    <div id="container"></div>
+    <script>
+    Highcharts.chart('container', {
+
+        title: {
+            text: "Tipo de Cambio Real Efectivo Sectorial desde 2014"
+        },
+
+        subtitle: {
+            text: "Fuente: Secretaría de Transformación Productiva"
+        },
+
+        yAxis: {
+            title: {
+                text: "Indice - Base Noviembre 2015=100"
+            }
+        },
+
+        data: {
+            csvURL: "https://apis.datos.gob.ar/series/api/series/?ids=tcrse_9kwOUq,tcrse_dw8v9V,tcrse_IBMDNk&format=csv&header=descriptions&limit=1000"
+        }
+
+    });
+    </script>
+</body>
+
+</html>
