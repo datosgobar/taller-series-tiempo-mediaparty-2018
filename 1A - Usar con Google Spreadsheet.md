@@ -27,14 +27,14 @@ En el taller, usá la [google spreadsheet con metadatos de las series](https://d
 
 ### 2. Armar consulta
 
-Los ids de las series deben pasarse al parámetro `ids`. Se pueden usar parámetros adicionales para [filtrar y transformar las series](additional_parameters.md).
+Los ids de las series deben pasarse al parámetro `ids`. Se pueden usar parámetros adicionales para [filtrar y transformar las series](https://datosgobar.github.io/series-tiempo-ar-api/additional-parameters/).
 
 [![](assets/ejemplo_consulta.png)](http://apis.datos.gob.ar/series/api/series?ids=168.1_T_CAMBIOR_D_0_0_26,103.1_I2N_2016_M_15&format=csv)
 
-Ver la [referencia API](https://series-tiempo-ar-api.readthedocs.io/es/latest/api_reference/) para consultar la documentación completa de todos los parámetros disponibles.
+Ver la [referencia API](https://datosgobar.github.io/series-tiempo-ar-api/reference/api-reference/) para consultar la documentación completa de todos los parámetros disponibles.
 
 ### 3. Integrar en Google Spreadsheet
 
 La función `IMPORTDATA()` toma la URL de la consulta a la API en CSV (usar `&format=csv`) y trae los datos actualizados a la planilla.
 
-Ver cómo [integrar la API en planillas de cálculo](https://series-tiempo-ar-api.readthedocs.io/es/latest/spreadsheet_integration/) para un paso a paso en Excel y en Google Spreadsheet.
+Ver cómo [integrar la API en planillas de cálculo](https://datosgobar.github.io/series-tiempo-ar-api/spreadsheet-integration/) para un paso a paso en Excel y en Google Spreadsheet.

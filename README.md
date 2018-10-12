@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ## Outline
 
 0. [Instalación de recursos + introducción (20/30')](https://docs.google.com/presentation/d/1GD_g9uNMfv2hL4uzFJO5vu2M8kr4nylveokd13cDi5Q/edit?usp=sharing)
-1. [Usar con Google Spreadsheet (30')](1%20-%20Usar%20con%20Google%20Spreadsheet.md)
+1. [A. Usar con Google Spreadsheet (30')](1A%20-%20Usar%20con%20Google%20Spreadsheet.md), [B. Usar con Excel](1B%20-%20Usar%20con%20Excel.md)
 2. [A. Usar con Python (30')](2A%20-%20Usar%20con%20Python.ipynb), [B. Usar con Stata](2B%20-%20Usar%20con%20Stata.do)
 3. [Usar con HTML y JavaScript (30')](3%20-%20Usar%20con%20HTML%20y%20JavaScript.md)
 4. Primicia, feedback, bonus track, invitación a un evento y algunas curiosidades... (20/30')
