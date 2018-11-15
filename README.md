@@ -5,7 +5,7 @@ Para seguir el taller te recomendamos que sigas las instrucciones de instalació
 
 ## Setting up!
 
-Si estás dispuesto a cambiar tu instalación de python (o todavía no tenés una!) te recomendamos que instales la distro [Anaconda](https://www.continuum.io/downloads). Ofrece un entorno preparado para hacer análisis de datos con python y ya viene con **dependencias pre-instaladas** para un montón de paquetes.
+Si estás dispuesto a cambiar tu instalación de python (o todavía no tenés una!) te recomendamos que instales la distro [Anaconda](https://www.anaconda.com/download). Ofrece un entorno preparado para hacer análisis de datos con python y ya viene con **dependencias pre-instaladas** para un montón de paquetes.
 
 Después clonate el repo e instalá las dependencias:
 
